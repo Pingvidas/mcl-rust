@@ -1,1 +1,0 @@
-/mnt/d/OneDrive/Dokumentai/GitHub/mcl-rust/target/debug/mcl_rust: /mnt/d/OneDrive/Dokumentai/GitHub/mcl-rust/build.rs /mnt/d/OneDrive/Dokumentai/GitHub/mcl-rust/src/lib.rs /mnt/d/OneDrive/Dokumentai/GitHub/mcl-rust/src/main.rs
