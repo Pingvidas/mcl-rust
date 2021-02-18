@@ -20,6 +20,7 @@ pub struct KZGSettings {
 }
 
 // go-kzg tipo commitment (neoptimizuotas)
+/*
 fn commit_to_poly(coefs: Fr) -> G1 {
     let ks: KZGSettings;
     let out = unsafe { G1::uninit() };
@@ -28,10 +29,11 @@ fn commit_to_poly(coefs: Fr) -> G1 {
     for i in 0..coefs.len() {                       // Kaip gauti/sukurti polinomą pagal Fr?
         G1::mul(&mut tmp, &ks.secretG1, &coefs);
         G1::add(&mut tmp2, &out, &tmp);
-        // &out, &tmp2;
+        &out, &tmp2;
     }
     out
 }
+*/
 
 #[allow(non_snake_case)]
 fn main() {
@@ -49,4 +51,6 @@ fn main() {
     // commit_to_poly(X);
 
     // mclBn_G1EvaluatePolynomial(mclBnG1 *out, const mclBnG1 *cVec, mclSize cSize, const mclBnFr *x);  //Funkcija neimplementuota mcl_rust
+    // mcl_rust ir bls_eth_rust nėra polinomų
+    // TODO Pasigilinti į finite field table
 }
